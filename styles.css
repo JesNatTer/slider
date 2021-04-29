@@ -12,6 +12,7 @@ body{
     background-attachment: fixed;
     display:flex;
     justify-content: center;
+    font-family: Helvetica, sans-serif;
 }
 
 .slider-container{
@@ -25,7 +26,7 @@ body{
     display: flex;
     justify-self: center;
     align-self: center;
-
+    padding:20px;
 }
 
 .items{
@@ -42,7 +43,7 @@ body{
     border-radius: 50%;
     justify-self:flex-start ;
     align-self: center;
-    margin:0 20px 0 30px;
+    margin:0 25px;
 
 }
 
@@ -51,4 +52,30 @@ body{
     flex-direction: column;
     align-items: center;
     padding:20px;
+}
+
+.slider-text h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.slider-text h2{
+    font-size: 18px;
+    color: brown;
+    margin-bottom: 10px;
+}
+
+.slider-text p{
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .items{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .slider-img{
+        margin:0 20px;
+    }
 }
